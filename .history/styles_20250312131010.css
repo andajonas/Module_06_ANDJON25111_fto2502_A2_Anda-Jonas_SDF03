@@ -1,0 +1,71 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 0 20px;
+
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20px;
+
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+.profile-image {
+    margin-right: 20px;
+}
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #104a08;
+}
+.profile-user-settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btn {
+    background: #181818;
+    color: white;
+    border: 1
+
+}
+
+img {
+    display: block;
+}

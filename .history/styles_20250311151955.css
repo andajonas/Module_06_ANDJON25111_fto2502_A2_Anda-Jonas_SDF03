@@ -1,0 +1,21 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    
+    
+}
+
+img {
+    display: block;
+    
+}

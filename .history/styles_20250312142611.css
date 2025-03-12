@@ -1,0 +1,129 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 0 20px;
+
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20px;
+
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+.profile-image {
+    margin-right: 20px;
+}
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #104a08;
+}
+.profile-user-settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btn {
+    background: #181818;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.profile-stats ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    gap: 15px;
+}
+.profile.bio {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover .gallery-image {
+     transform: scaled(1.05);
+}
+.gallery-item-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+}
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #808080;
+    border-top: 5px solid #808080;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+img {
+    display: block;
+}
