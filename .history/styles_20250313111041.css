@@ -116,22 +116,25 @@ header {
     opacity: 1;
 }
 .loader {
-    position: fixed; 
-    bottom: 20px;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
-    height: 50px; 
+    height: 50px;
     border: 5px solid rgba(255, 255, 255, 0.3);
-    border-top: 5px solid #fff; 
+    border-top: 5px solid #fff; /* Spinner color */
     border-radius: 50%;
     animation: spin 1s linear infinite;
+    display: none; /* Hide by default */
 }
 
+/* Spinning animation */
 @keyframes spin {
     0% { transform: translateX(-50%) rotate(0deg); }
     100% { transform: translateX(-50%) rotate(360deg); }
 }
+
 
 
 img {

@@ -116,11 +116,11 @@ header {
     opacity: 1;
 }
 .loader {
-    position: fixed; 
-    bottom: 20px;
+    position: fixed; /* Stays in place even when scrolling */
+    bottom: 20px; /* Adjust this value to move it up or down */
     left: 50%;
     transform: translateX(-50%);
-    width: 50px;
+    width: 50px; /* Adjust as needed */
     height: 50px; 
     border: 5px solid rgba(255, 255, 255, 0.3);
     border-top: 5px solid #fff; 
@@ -128,6 +128,7 @@ header {
     animation: spin 1s linear infinite;
 }
 
+/* Spinning animation */
 @keyframes spin {
     0% { transform: translateX(-50%) rotate(0deg); }
     100% { transform: translateX(-50%) rotate(360deg); }
