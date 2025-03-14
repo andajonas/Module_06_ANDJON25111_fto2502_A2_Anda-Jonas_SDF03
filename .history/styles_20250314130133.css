@@ -167,24 +167,6 @@ img {
 
 .fa-clone,
 .fa-comment{
-    transform: rotateY(180deg);
+    transform
 }
-.gallery-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.loader {
-    width: 5rem;
-    height: 5rem;
-    border: 0.6rem solid #999;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: loader 500ms linear infinite;
-}
-@keyframes loader {
-    to {
-        transform: rotate(360deg);
-    }
-}
+

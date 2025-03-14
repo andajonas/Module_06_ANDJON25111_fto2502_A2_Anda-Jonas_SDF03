@@ -184,7 +184,5 @@ img {
     animation: loader 500ms linear infinite;
 }
 @keyframes loader {
-    to {
-        transform: rotate(360deg);
-    }
+    to{}
 }
