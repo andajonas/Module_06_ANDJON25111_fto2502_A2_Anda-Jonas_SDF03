@@ -140,17 +140,12 @@ header {
 .loader {
   width: 5rem;
   height: 5rem; 
-  border: 0.6rem solid #999;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  margin: 0 auto;
-  animation: loader 500ms linear infinite;
+  border: 0.6rem solid #999
 }
 
-@keyframes loader {
- to {
-      transform: rotate(360deg);
- }
+@keyframes spin {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(360deg); }
 }
 
 

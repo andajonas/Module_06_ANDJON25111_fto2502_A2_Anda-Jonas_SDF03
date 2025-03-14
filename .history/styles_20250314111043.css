@@ -145,12 +145,8 @@ header {
   border-radius: 50%;
   margin: 0 auto;
   animation: loader 500ms linear infinite;
+  
 }
 
-@keyframes loader {
- to {
-      transform: rotate(360deg);
- }
-}
 
 
